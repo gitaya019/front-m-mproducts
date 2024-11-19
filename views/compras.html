@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Compras</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gestión de Compras</h1>
+    <form id="compra-form">
+      <textarea id="descripcion" placeholder="Descripción" required></textarea>
+      <select id="proveedors_id" required>
+        <option value="" disabled selected>Seleccione un proveedor</option>
+      </select>
+      <select id="productos_id" required>
+        <option value="" disabled selected>Seleccione un producto</option>
+      </select>
+      <input type="number" id="cantidad" placeholder="Cantidad" required>
+      <button type="submit">Crear Compra</button>
+    </form>
+    <div id="compra-list"></div>
+  </div>
+  <script src="../js/compras.js"></script>
+</body>
+</html>

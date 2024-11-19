@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Proveedores</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gestión de Proveedores</h1>
+    <form id="proveedor-form">
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="text" id="nit" placeholder="NIT" required>
+      <input type="email" id="correo" placeholder="Correo">
+      <input type="text" id="telefono" placeholder="Teléfono" required>
+      <button type="submit">Crear Proveedor</button>
+    </form>
+    <div id="proveedor-list"></div>
+  </div>
+  <script src="../js/proveedores.js"></script>
+</body>
+</html>

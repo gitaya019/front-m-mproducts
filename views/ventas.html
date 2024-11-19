@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Ventas</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gestión de Ventas</h1>
+    <form id="venta-form">
+      <textarea id="descripcion" placeholder="Descripción" required></textarea>
+      <select id="clientes_id" required>
+        <option value="" disabled selected>Seleccione un cliente</option>
+      </select>
+      <select id="productos_id" required>
+        <option value="" disabled selected>Seleccione un producto</option>
+      </select>
+      <input type="number" id="cantidad" placeholder="Cantidad" required>
+      <button type="submit">Crear Venta</button>
+    </form>
+    <div id="venta-list"></div>
+  </div>
+  <script src="../js/ventas.js"></script>
+</body>
+</html>
